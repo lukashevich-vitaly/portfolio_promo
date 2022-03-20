@@ -23,6 +23,12 @@ tabButtons.forEach((tabButton) => {
         changeContent(tabDesign, dataValue);
         changeContent(tabTitle, dataValue);
         
+        tabTitle.forEach(title => {
+            if(!title.classList.contains("hidden")) {
+                document.title = title.innerText;
+            }
+        })
+
         tabButtons.forEach((btn) => {
             if (btn === event.target) {
                 btn.classList.add('design-list__item_active');
