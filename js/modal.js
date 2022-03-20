@@ -15,6 +15,3 @@ overlay.addEventListener('click', () => {
 closeButton.addEventListener('click', () => {
     modal.classList.add('hidden')
 });
-
-console.log(modalButton);
-console.log(modal);
