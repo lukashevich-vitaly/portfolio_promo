@@ -29,6 +29,8 @@ forms.forEach((form) => {
             }
         })
         .then(data => {
+            const modal = document.querySelector('.modal');
+            modal.classList.add('hidden')
             alert('Данные отправлены успешно')
         })
         .catch(error => {
